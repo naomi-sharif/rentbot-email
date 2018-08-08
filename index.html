@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Email template</title>
+        <style type="text/css">
+
+            /*////// RESET STYLES //////*/
+            body, #body-table, #body-cell,{Height: 100% !important; margin: 0; padding: 0; width: 100% !important;}
+            table{border-collapse:collapse;}
+            img, a img{border: 0; outline: none; text-decoration: none;}
+            h1, h2, h3, h4, h5, h6{padding: 0; margin: 0;}
+
+            /*////// CLIENT SPECIFIC STYLES //////*/
+            .ReadMsgBody{width: 100%;} .ExternalClass{width: 100%;} /* This will force Outlook/Hotmail to display emails at full width*/
+            .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div{line-height: 100%;} /*Forces Outlook/Hotmail to display all line heights normally - here we just selected all the tags that may contain text*/
+            table, td{mso-table-lspace: 0pt; mso-table-rspace: 0pt;} /* Removes spacing in Outlook 2007 and above */
+            #outlook a{padding: 0;} /* Forces Outlook 2007 and up to provide a 'View in browser' message */
+            img{-ms-interpolation-mode: bicubic;} /* Forces IE to smoothly render resized images */
+            body, table, td, p, a, li, blockquote{-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;} /* Prevent Windows - and Webkit-based mobile platforms from changing declared text sizes */
+
+            /*////// GENERAL STYLES //////*/
+            h1, h2, h3{font-family: "Open Sans", Helvetica, Arial, sans-serif;}
+            h1{color: rgb(36,15,65); font-size: 25px; font-weight: 600; line-height: 1.5; text-align: center;}
+            h2{color: rgb(120, 54, 137); font-size: 20px; font-weight: 600; line-height: 115%; text-align: center;}
+
+            /*////// SECTION SPECIFIC STYLES //////*/
+            .email-container{width: 70%; background-color: rgb(245, 245, 245);}
+            .email-content{width: 70%; background-color: rgb(255, 255, 255);}
+            .title-section{padding-top: 30px;}
+            .header-section{padding: 15px;}
+            .email-text{padding: 55px 55px 10px 55px;}
+            .email-sign-off{padding: 0px 55px 10px 55px;}
+
+            /*////// BUTTON STYLES //////*/
+            .button a{background-color: #DA2A6F; border-color: #DA216F; border-radius: 4px; text-align: center; padding: 10px 25px 10px 25px; box-shadow: 0 3px 0 rgb(231, 231, 231);}
+            .button a{text-decoration: none; text-transform: uppercase; color: #fff; font-size: 14px; letter-spacing: 1px; display: block;}
+            .button-container{padding: 0px 0px 50px 0px;}
+
+
+
+
+        </style>
+    </head>
+
+    <body>
+        <center>
+            <table id="body-table" border="0" cellpadding="0" cellspacing="0" height="100%" width="100%">
+                <tr>
+                    <td align="center" valign="top" id="body-cell">
+
+                        <!-- // BEGIN EMAIL -->
+                        <table class="email-container" border="0" cellpadding="5px" cellspacing="0" width="80%">
+
+                            <!-- // HEADER SECTION -->
+                            <tr>
+                                <td class="header-section" align="center" valign="middle">
+                                    <img src="/Users/naomi/Desktop/rentbot-email/img/rentbot.png" alt="Rentbot Header Logo" height="65px">
+                                </td>
+                            </tr>
+                            <!-- // HEADER SECTION END -->
+
+                            <tr>
+                                <td>
+                                    <table class="email-content" border="0px" width="80%" align="center">
+
+                                        <!-- EMAIL TITLE SECTION START-->
+                                        <tr>
+                                            <td class="title-section" align="center">
+                                                <h1>Password Reset</h1>
+                                                <img src="/Users/naomi/Desktop/rentbot-email/img/icons8-forgot-password-48 (1).png" alt="Lock icon" height="50px">
+                                            </td>
+                                        </tr>
+                                        <!-- EMAIL TITLE SECTION END-->
+
+
+                                        <!-- // EMAIL TEXT START -->
+                                        <tr>
+                                            <td class="email-text" align="center">
+                                                <h2>Hello John,</h2>
+                                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea, dignissimos fuga expedita dolorum, atque ad officia asperiores suscipit vero aliquid consequuntur temporibus labore fugiat facilis optio alias laboriosam corrupti! Veniam!</p>
+                                            </td>
+                                        </tr>
+                                        <!-- // EMAIL TEXT END -->
+
+                                        <!-- // EMAIL BUTTON START -->
+                                        <tr>
+                                            <td class="button-container" align="center">
+                                                <table>
+                                                    <tr>
+                                                        <td class="button">
+                                                            <a href="#">Password Reset</a>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <!-- // EMAIL BUTTON END -->
+
+
+                                        <!-- // EMAIL SIGN OFF START -->
+                                        <tr>
+                                            <td class="email-sign-off" align="center">
+                                                <p>If you didn't request this, you can ignore this email or let us know, your password won't change until you create a new one.</p>
+                                            </td>
+                                        </tr>
+                                        <!-- // EMAIL SIGN OFF END -->
+
+
+                                    </table> <!-- EMAIL CONTENT END-->
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="footer" align="center">
+                                    <p>Can't get enough of us - follow us on our social media accounts!</p>
+                                    <p>Copyright © 2018 GoldSpec Digital Ltd. All rights reserved.</p>
+                                    <p>GoldSpec Digital Ltd is a limited company registered in England and Wales.<br />
+                                        Company Registration No. 10944413 | VAT No. 282305123<br />
+                                        Registered Office: 15 Queen Square, Leeds, LS2 8AJ, England</p><br />
+                                    <a href="#">Privacy Policy</a>
+                                </td>
+
+                            </tr>
+
+                        </table> <!-- EMAIL-CONTAINER END-->
+
+                    </td> <!-- BODY-CELL END-->
+                </tr>
+
+            </table> <!-- BODY-TABLE END-->
+        </center>
+    </body>
