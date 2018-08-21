@@ -2,11 +2,19 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <!--<![endif]-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Email template</title>
+        <!--[if (gte mso 9)|(IE)]>
+        <style type="text/css">
+            table {border-collapse: collapse;}
+        </style>
+        <![endif]-->
         <style type="text/css">
 
             /*////// RESET STYLES //////*/
-            body, #body-table, #body-cell,{Height: 100% !important; margin: 0; padding: 0; width: 100% !important;}
+            body, #body-table, #body-cell{height: 100% !important; margin: 0; padding: 0; width: 100% !important;}
             table{border-collapse:collapse;}
             img, a img{border: 0; outline: none; text-decoration: none;}
             h1, h2, h3, h4, h5, h6{padding: 0; margin: 0;}
@@ -22,52 +30,81 @@
             /*////// GENERAL STYLES //////*/
             h1, h2, h3{font-family: "Open Sans", Helvetica, Arial, sans-serif;}
             h1{color: rgb(36,15,65); font-size: 25px; font-weight: 600; line-height: 1.5; text-align: center;}
-            h2{color: rgb(120, 54, 137); font-size: 20px; font-weight: 600; line-height: 115%; text-align: center;}
+            h2{color: rgb(71, 61, 140); font-size: 20px; font-weight: 600; line-height: 115%; text-align: center;}
 
             /*////// SECTION SPECIFIC STYLES //////*/
-            .email-container{width: 70%; background-color: rgb(245, 245, 245);}
-            .email-content{width: 70%; background-color: rgb(255, 255, 255);}
-            .title-section{padding-top: 30px;}
-            .header-section{padding: 15px;}
-            .email-text{padding: 55px 55px 10px 55px;}
-            .email-sign-off{padding: 0px 55px 10px 55px;}
+            .email-container{width: 100%; height:"100%"; background-color: rgb(245, 245, 245); font-family: "Open Sans", Helvetica, Arial, sans-serif;}
+            .email-content{width: 80%; background-color: rgb(255, 255, 255); font-family: "Open Sans", Helvetica, Arial, sans-serif;}
+            .title-section{padding-top: 30px; font-family: "Open Sans", Helvetica, Arial, sans-serif;}
+            .header-section{padding: 15px; font-family: "Open Sans", Helvetica, Arial, sans-serif;}
+            .email-text{padding: 55px 55px 10px 55px; font-family: "Open Sans", Helvetica, Arial, sans-serif; font-size: 18px;}
+            .email-sign-off{padding: 0px 55px 10px 55px; font-family: "Open Sans", Helvetica, Arial, sans-serif;}
+            .footer-social-media{font-family: "Open Sans", Helvetica, Arial, sans-serif;}
+            .facebook{padding: 0px 0px 0px 15px;}
+            .instagram{padding: 0px 0px 0px 15px;}
+            .social-media{color: rgb(136, 136, 136);}
+            .copyright{color: rgb(136, 136, 136);}
+            .footer-social-media{padding-bottom: 50px;}
+            .webkit {max-width: 600px; margin: 0 auto;}
 
             /*////// BUTTON STYLES //////*/
             .button a{background-color: #DA2A6F; border-color: #DA216F; border-radius: 4px; text-align: center; padding: 10px 25px 10px 25px; box-shadow: 0 3px 0 rgb(231, 231, 231);}
-            .button a{text-decoration: none; text-transform: uppercase; color: #fff; font-size: 14px; letter-spacing: 1px; display: block;}
+            .button a{text-decoration: none; text-transform: uppercase; color: #ffffff; font-size: 14px; letter-spacing: 1px; display: block;}
             .button-container{padding: 0px 0px 50px 0px;}
 
+            /*////// MEDIA QUERIES //////*/
 
+            @media screen and (max-width: 600px) {
+                .email-content {
+                    min-width: 100%;
+                }
 
+                .email-text {
+                    padding: 55px 10px 10px 10px;
+                }
+
+                .email-sign-off {
+                    padding: 0px 10px 10px 10px;
+                }
+
+                .social-media {
+                    padding: 0px 10px 0px 10px;
+                }
+
+                .copyright {
+                    padding: 0px 10px 0px 10px;
+                }
+            }
 
         </style>
     </head>
 
-    <body>
-        <center>
-            <table id="body-table" border="0" cellpadding="0" cellspacing="0" height="100%" width="100%">
+    <body margin="0" padding="0">
+        <center class="wrapper" margin="0" padding="0">
+            <div class="webkit">
+            <table id="body-table" border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" role="presentation">
                 <tr>
                     <td align="center" valign="top" id="body-cell">
 
                         <!-- // BEGIN EMAIL -->
-                        <table class="email-container" border="0" cellpadding="5px" cellspacing="0" width="80%">
+                        <table class="email-container" border="0" cellpadding="5px" cellspacing="0" width="80%" role="presentation">
 
                             <!-- // HEADER SECTION -->
                             <tr>
                                 <td class="header-section" align="center" valign="middle">
-                                    <img src="/Users/naomi/Desktop/rentbot-email/img/rentbot.png" alt="Rentbot Header Logo" height="65px">
+                                    <img src="img/rentbot-logo.png" alt="rentbot_logo" border="0" alt="Rentbot Header Logo" height="65px">
                                 </td>
                             </tr>
                             <!-- // HEADER SECTION END -->
 
                             <tr>
                                 <td>
-                                    <table class="email-content" border="0px" width="80%" align="center">
+                                    <table class="email-content" border="0px" width="80%" align="center" cellpadding="0" cellspacing="0" role="presentation">
 
                                         <!-- EMAIL TITLE SECTION START-->
                                         <tr>
-                                            <td class="title-section" align="center">
-                                                <h1>Password Reset</h1>
+                                            <td class="title-section" align="center" align="top">
+                                                <h1 style="margin:0; mso-line-height-rule:exactly;">Password Reset</h1>
                                                 <img src="/Users/naomi/Desktop/rentbot-email/img/icons8-forgot-password-48 (1).png" alt="Lock icon" height="50px">
                                             </td>
                                         </tr>
@@ -76,20 +113,20 @@
 
                                         <!-- // EMAIL TEXT START -->
                                         <tr>
-                                            <td class="email-text" align="center">
-                                                <h2>Hello John,</h2>
-                                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea, dignissimos fuga expedita dolorum, atque ad officia asperiores suscipit vero aliquid consequuntur temporibus labore fugiat facilis optio alias laboriosam corrupti! Veniam!</p>
+                                            <td class="email-text" align="center" valign="top">
+                                                <h2 style="margin:0; mso-line-height-rule:exactly;">Hello John,</h2>
+                                                <p style="margin:0;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea, dignissimos fuga expedita dolorum, atque ad officia asperiores suscipit vero aliquid consequuntur temporibus labore fugiat facilis optio alias laboriosam corrupti! Veniam!</p>
                                             </td>
                                         </tr>
                                         <!-- // EMAIL TEXT END -->
 
                                         <!-- // EMAIL BUTTON START -->
                                         <tr>
-                                            <td class="button-container" align="center">
-                                                <table>
+                                            <td class="button-container" align="center" valign="top">
+                                                <table border="0" cellpadding="0" cellspacing="0" role="presentation">
                                                     <tr>
-                                                        <td class="button">
-                                                            <a href="#">Password Reset</a>
+                                                        <td class="button" align="center" valign="top">
+                                                            <a href="#">Reset Password</a>
                                                         </td>
                                                     </tr>
                                                 </table>
@@ -100,8 +137,8 @@
 
                                         <!-- // EMAIL SIGN OFF START -->
                                         <tr>
-                                            <td class="email-sign-off" align="center">
-                                                <p>If you didn't request this, you can ignore this email or let us know, your password won't change until you create a new one.</p>
+                                            <td class="email-sign-off" align="center" valign="top">
+                                                <p style="margin:0;">If you didn't request this, you can ignore this email or <a class="mail-link" href="mailto:someone@example.com?Subject=Email%20incorrectly%20received" target="_top">let us know</a>, your password won't change until you create a new one.</p>
                                             </td>
                                         </tr>
                                         <!-- // EMAIL SIGN OFF END -->
@@ -112,22 +149,31 @@
                             </tr>
 
                             <tr>
-                                <td class="footer" align="center">
-                                    <p>Can't get enough of us - follow us on our social media accounts!</p>
-                                    <p>Copyright © 2018 GoldSpec Digital Ltd. All rights reserved.</p>
-                                    <p>GoldSpec Digital Ltd is a limited company registered in England and Wales.<br />
+                                <td class="footer-social-media" align="center" valign="top">
+                                    <p style="margin:0;" class="social-media">Can't get enough of us? Follow us on our social media accounts!</p>
+                                    <img class="twiiter" src="/Users/naomi/Desktop/rentbot-email/img/twitter-brands.svg" alt="" height="20px">
+                                    <img class="facebook" src="/Users/naomi/Desktop/rentbot-email/img/facebook-f-brands.svg" alt="" height="20px">
+                                    <img class="instagram" src="/Users/naomi/Desktop/rentbot-email/img/instagram-brands.svg" alt="" height="20px">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="copyright" align="center" valign=top"">
+                                    <p style="margin:0;">Copyright © 2018 GoldSpec Digital Ltd. All rights reserved.</p>
+                                    <p style="margin:0;">GoldSpec Digital Ltd is a limited company registered in England and Wales.<br />
                                         Company Registration No. 10944413 | VAT No. 282305123<br />
-                                        Registered Office: 15 Queen Square, Leeds, LS2 8AJ, England</p><br />
+                                        Registered Office: 15 Queen Square, Leeds, LS2 8AJ, England
+                                    </p>
                                     <a href="#">Privacy Policy</a>
                                 </td>
-
                             </tr>
 
                         </table> <!-- EMAIL-CONTAINER END-->
 
                     </td> <!-- BODY-CELL END-->
                 </tr>
-
             </table> <!-- BODY-TABLE END-->
+            </div>
         </center>
     </body>
+</html>
